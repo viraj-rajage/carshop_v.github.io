@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Raleway:ital,wght@0,100;0,200;0,600;0,700;0,900;1,500;1,600;1,700;1,900&family=The+Nautigal:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap" rel="stylesheet"> 
+<link rel="stylesheet" media="screen and (max-width:1300px)" href="pho.css">
+</head>
+<style>
+    *{
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --navbar-height:50px;
+} 
+#navbar{
+    display: flex; 
+    align-items: center;
+    position: absolute;
+    top: 0px;
+
+} 
+
+#logo{
+margin: 10px 35px;
+
+}
+#logo img{ 
+    height: 50px;
+    margin: 3px 50px;
+
+} 
+
+#navbar ul{
+    display: flex;
+    font-family: 'Playfair Display', serif;
+
+} 
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%; 
+    z-index: -1; 
+    opacity: 0.5
+
+}
+#navbar ul li{
+   /* color: ;*/ 
+   list-style: none;
+   font-size: 1.4 rem;
+} 
+#navbar ul li a{ 
+    color: white;
+    display: block;
+    padding: 3px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+}  
+#navbar ul li :hover{ 
+    color: rgb(236, 22, 22);
+    background-color: white;
+} 
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    height: 690px;
+    justify-content: center;
+    align-items: center;
+}
+#home::before{
+    content: "";
+    background:url('https://pixnio.com/free-images/2018/11/27/2018-11-27-15-44-25.jpg');
+    position: absolute;
+    height: 100%;
+    width: 100%; 
+    z-index: -1; 
+    opacity: 0.90
+
+} 
+#home h1{
+    color: rgb(241, 22, 22);
+    text-align: center;
+    font-family: 'Merriweather', serif;
+}
+#home p{
+    color: rgb(247, 162, 162);
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Bree Serif', serif;
+
+}
+#services{
+    margin: 15px;
+    display: flex;
+}
+
+#services .box{
+    border: 3px solid brown;
+    padding: 35px;
+    margin: 4px 7px;
+    border-radius: 28px;
+    background: rgb(216, 216, 236);
+}
+#services .box img{
+    height: 150px;
+    margin: auto;
+    display: block;
+    
+}
+#services .box p{
+    font-family: 'Playfair Display', serif;
+} 
+#client-section{ 
+     width: 344px; 
+     align-items: center; 
+     justify-content: center;
+       
+}
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    pointer-events: initial;
+} 
+#clients img{
+    height: 150px; 
+    
+}
+.client-item{
+    padding: 40px;
+} 
+#client-section::before{
+   content: "";
+   position: absolute;
+   background: url('https://www.teahub.io/photos/full/96-962236_gaussian-abstract-wallpapers-colors-background-full-hd-simple.jpg');
+   width: 100%;
+   height: 45%;
+   z-index: -1;
+   opacity: 0.5;
+}
+#contact{
+    position: relative;
+} 
+#contact::before{
+   content: "";
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   z-index: -1;
+   opacity: 0.6;
+   background: url('')no-repeat center center/cover;
+}
+
+.h-primary{
+    font-size: 3.7rem;
+    padding: 12px;
+
+} 
+.h-secondary{
+    font-size: 2.7rem;
+    padding: 12px;
+
+} 
+footer{
+    background: #5a5357;
+    color: rgb(248, 242, 242);
+    padding: 10px 20px;
+
+}
+
+#contact-box input, 
+#contact-box textarea{
+    width: 100%;
+    padding: 01.5rem;
+    border-radius: 10px;
+    font-size: 1.2rem;
+
+}  
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 35px;
+}
+#contact-box form{
+    width: 40%;
+
+} 
+#contact-box label{
+    font-size: 1.4rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.btn{
+    padding: 6px 22px;
+    border: 2px solid wheat;
+    background-color: violet;
+    color: white;
+    margin: 15px;
+    font-size: 1.4rem;
+    border-radius: 10px;
+    cursor: pointer;
+} 
+.center{
+    text-align: center;
+} 
+.button{
+    padding: 6px 22px;
+    border: 2px solid wheat;
+    background-color: violet;
+    color: white;
+    margin: 15px;
+    font-size: 1.4rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+</style>
+<body bgcolor="63E9FC">
+    <nav id="navbar">
+        <div id="logo">
+            <img src="" alt="logo">
+        </div>
+        <ul>
+            <li class="iteam"><a href="#">home</a></li>
+            <li class="iteam"><a href="#">aboute us</a></li>
+            <li class="iteam"><a href="#">services</a></li>
+            <li class="iteam"><a href="#">contaact us</a></li>
+        </ul>
+    </nav> 
+    <section id="home">
+        <h1 class="h-primary">welcome to my car shop</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. mollitia nobis dolore repellat, aut tenetur tempora reprehenderit sunt.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, natus.</p>
+        <button class="btn"><a href="buy.html">BOOK NOW</button>
+    </section>
+    <section class="services-container">
+        <h1 class="h-primary center">our services</h1>
+        <div id="services">
+            <div class="box">
+                <img src="https://cdni.autocarindia.com/utils/imageresizer.ashx?n=http://cms.haymarketindia.net/model/uploads/modelimages/7%20SeriesModelImage.jpg&w=872&h=578&q=75&c=1" alt="">
+                <h2 class="h-secondary center">car ordering</h2>
+                <p class="center">xime corrupti culpa facere repellendus officia veritatis, provident, id, dolores quo voluptatibus dolore eum fugit maiores consequatur impedit aliquid? Accusantium nostrum et tenetur quisquam.</p>
+            </div>
+            <div class="box">
+                <img src="https://thumbs.dreamstime.com/z/car-service-icon-white-background-vector-illustration-car-service-vector-icon-white-background-124854568.jpg" alt="">
+                <h2 class="h-secondary center">car services</h2>
+                <p class="center">e repellendus officia veritatis, provident, id, dolores quo voluptatibus dolore eum fugit maiores consequatur impedit aliquid? Accusantium nostrum et tenetur quisquam.</p>
+            </div>
+            <div class="box">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYFbD08a3dMZ7C4fPloekJfmYMuy7fWegyGd16lL2S_l1zrnjfB889bJaM_DRN4c08jaM&usqp=CAU" alt="">
+                <h2 class="h-secondary center">car reparring</h2>
+                <p class="center">remre repellendus officia veritatis, provident, id, dolores quo voluptatibus dolore eum fugit maiores consequatur impedit aliquid? Accusantium nostrum et tenetur quisquam.</p>
+            </div>
+        </div>
+    </section>  
+    
+    
+    </section> 
+    <section id="contact">
+        <h1 class="h-primary center">contact us</h1>
+        <div id="contact-box">
+            <form action="">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" name="name" id="name" placeholder="ENTER YOUR NAME">
+                </div> 
+                <div class="form-group">
+                    <label for="name">Email:</label>
+                    <input type="text" name="name" id="Email" placeholder="ENTER YOUR EMAIL">
+                </div>
+                <div class="form-group">
+                    <label for="name">PHONE NO.:</label>
+                    <input type="text" name="name" id="phone no" placeholder="ENTER YOUR PHONE NO..">
+                </div>
+                <div class="form-group">
+                    <label for="name">MESSEGE:</label>
+                    <input type="text" name="name" id="message" placeholder="TYPE YOUR MESSEGE">
+                </div> 
+                <button class="button">submit</button>
+            </form>
+        </div>
+    </section> 
+    <footer>
+        <div class="center">
+            copyright &copy; www.car_shoping.com. all rights reseeved!
+        </div>
+    </footer>
+</body>
+</html>
